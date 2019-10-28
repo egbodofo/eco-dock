@@ -22,10 +22,10 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: eu-east-2
-  app: eco-docker
-  env: EcoDocker-env
+  app: ecommerce-docker
+  env: EcommerceDocker-env
   bucket_name: elasticbeanstalk-us-east-2-008951252297
-  bucket_path: eco-docker
+  bucket_path: docker-ecommerce
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
