@@ -21,7 +21,7 @@ after_success:
   - docker push egbodofo/ecodock-server
 deploy:
   provider: elasticbeanstalk
-  region: eu-east-2
+  region: us-east-2
   app: wishmart
   env: Wishmart-env
   bucket_name: elasticbeanstalk-us-east-2-008951252297
