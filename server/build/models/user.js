@@ -99,7 +99,7 @@ userSchema.methods.generateAuthToken = function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    token = jsonwebtoken_1.default.sign({ _id: this._id.toString() }, process.env.JWT_SECRET || '');
+                    token = jsonwebtoken_1.default.sign({ _id: this._id.toString() }, 'ecommercejwtsecret' || '');
                     this.tokens = this.tokens.concat({ token: token });
                     return [4 /*yield*/, this.save()];
                 case 1:

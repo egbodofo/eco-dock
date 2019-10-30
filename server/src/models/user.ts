@@ -80,7 +80,7 @@ userSchema.methods.toJSON = function(): Document {
 userSchema.methods.generateAuthToken = async function(): Promise<string> {
   const token: string = jwt.sign(
     { _id: this._id.toString() },
-    process.env.JWT_SECRET || ''
+    'ecommercejwtsecret' || ''
   );
 
   this.tokens = this.tokens.concat({ token });
