@@ -88,6 +88,7 @@ userSchema.methods.generateAuthToken = async function(): Promise<string> {
   await this.save();
   return token;
 };
+// kk
 
 userSchema.statics.findByCredentials = async (
   email: string,
