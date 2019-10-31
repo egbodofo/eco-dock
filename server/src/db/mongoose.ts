@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const mongoUri = 'mongodb+srv://yelpcamp:oluwafaby@cluster0-ozwro.mongodb.net/eco-dock?retryWrites=true&w=majority' || '';
+const mongoUri = process.env.MONGODB_URL || '';
 
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
